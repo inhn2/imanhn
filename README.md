@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-#myDiv {
+Div {
   border: 3px outset blue;
   background-color: lightblue;    
   text-align: center;
