@@ -4,7 +4,7 @@
 </head>
 <body>
 <div>
-  <h2>hello to world peaple</h2>
+  <h2 style="color:blue;">hello to world peaple</h2>
   <p>my name is ...</p>
 </div>
 </body>
