@@ -7,7 +7,10 @@
 <body>
  <p id="demo"></p>
 <script type="text/javascript">
- let d =   new persianDate().format(); // "۱۳۹۶-۰۱-۱۱ ۲۳:۳۳:۲۷ ب ظ" (when i run in my console)  
+ persianDate.toLocale('en');
+ let a =   new persianDate().format();
+ let b = var b = new persianDate([1402,6,12]);
+let d = a.diff(b, 'days');
  document.getElementById("demo").innerHTML = d;   
 </script>
    
