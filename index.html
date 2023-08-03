@@ -9,14 +9,14 @@
 <script type="text/javascript">
  persianDate.toLocale('en');
 
-var a =  new persianDate([new persianDate().format('YYYY'),new persianDate().format('MM'),new persianDate().format('DD')]);
-//var a = new persianDate([1402,05,12]);
+//var a =  new persianDate([new persianDate().format('YYYY'),new persianDate().format('MM'),new persianDate().format('DD')]);
+var a = new persianDate([1402,05,12]);
 var b = new persianDate([1402,05,18]);
-//var d = b.diff(a, 'days');
+var d = b.diff(a, 'days');
 // var d =  new persianDate().format('YYYY');
 // var d = new persianDate().format('DD');
 // var d = new persianDate().format('MM'); 
- document.getElementById("demo").innerHTML = b[0];   
+ document.getElementById("demo").innerHTML = d;   
 </script>
    
 <p style="font-size:48px">
