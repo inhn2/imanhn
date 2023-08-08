@@ -1,5 +1,3 @@
-let persianDate;
-
 /*!
  * 
  * persian-date -  1.1.0
@@ -3287,6 +3285,3 @@ module.exports = {
 /***/ })
 /******/ ]);
 });
-
-let persianDate;
-export { persianDate };
