@@ -1,3 +1,5 @@
+let persianDate();
+
 /*!
  * 
  * persian-date -  1.1.0
