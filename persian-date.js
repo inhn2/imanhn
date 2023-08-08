@@ -3286,4 +3286,5 @@ module.exports = {
 /******/ ]);
 });
 
+let persianDate;
 export { persianDate };
