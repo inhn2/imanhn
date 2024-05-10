@@ -6,6 +6,9 @@ var b = [];
 var b1 = [];
 var b2 = [];
 var b3 = [];
+var name = (l30).replace(/[0-9,/,-]/g, '').slice(8);
+
+if(name.charAt(0)==' '){name = name.slice(1);}
  
 
 fetch(apiUrl)
@@ -30,10 +33,10 @@ for (i=0;i<data.instrumentOptMarketWatch.length;i++){
 b[i] = data.instrumentOptMarketWatch[i].lval30_UA;
 
   function checkname(na) {
-  return na == 'خودران';
+  return na == name;
 }
 
-if( 'خودران' == b[i] ){
+if( name == b[i] ){
 
 b1[i] = i;
 
