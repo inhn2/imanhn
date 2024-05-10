@@ -30,10 +30,10 @@ for (i=0;i<data.instrumentOptMarketWatch.length;i++){
 b[i] = data.instrumentOptMarketWatch[i].lval30_UA;
 
   function checkname(na) {
-  return na == name;
+  return na == 'خودران';
 }
 
-if( name == b[i] ){
+if( 'خودران' == b[i] ){
 
 b1[i] = i;
 
