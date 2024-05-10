@@ -6,9 +6,6 @@ var b = [];
 var b1 = [];
 var b2 = [];
 var b3 = [];
-var name = (l30).replace(/[0-9,/,-]/g, '').slice(8);
-
-if(name.charAt(0)==' '){name = name.slice(1);}
  
 
 fetch(apiUrl)
