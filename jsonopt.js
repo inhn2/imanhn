@@ -30,7 +30,7 @@ fetch(apiUrl)
 for (i=0;i<data.instrumentOptMarketWatch.length;i++){
 
 b[i] = data.instrumentOptMarketWatch[i].lval30_UA;
-ca[i] = data.instrumentOptMarketWatch[i].strikePrice;
+ca[i] = data.instrumentOptMarketWatch[i];
  
 
   function checkname(na) {
