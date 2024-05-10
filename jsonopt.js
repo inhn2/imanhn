@@ -6,6 +6,7 @@ var b = [];
 var b1 = [];
 var b2 = [];
 var b3 = [];
+var name = 'خودران';
  
 
 fetch(apiUrl)
@@ -30,10 +31,10 @@ for (i=0;i<data.instrumentOptMarketWatch.length;i++){
 b[i] = data.instrumentOptMarketWatch[i].lval30_UA;
 
   function checkname(na) {
-  return na == 'خودران';
+  return na == name;
 }
 
-if( 'خودران' == b[i] ){
+if( name == b[i] ){
 
 b1[i] = i;
 
