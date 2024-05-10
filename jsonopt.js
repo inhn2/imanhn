@@ -6,7 +6,7 @@ var b = [];
 var b1 = [];
 var b2 = [];
 var b3 = [];
-var ca = [];
+var c1 = [];
 var name = 'خودران';
  
 
@@ -30,7 +30,7 @@ fetch(apiUrl)
 for (i=0;i<data.instrumentOptMarketWatch.length;i++){
 
 b[i] = data.instrumentOptMarketWatch[i].lval30_UA;
-ca[i] = data.instrumentOptMarketWatch[i];
+c1[i] = data.instrumentOptMarketWatch[i];
  
 
   function checkname(na) {
