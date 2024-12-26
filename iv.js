@@ -4,8 +4,6 @@ const apiUrl = 'https://finroad.ir/panel/makejson.php';
 
 var xivd = [];
 
- 
-
 fetch(apiUrl)
 
   .then(response => {
@@ -26,9 +24,6 @@ fetch(apiUrl)
 for (i=0;i<data.data.length;i++){
 
 xivd[i] = data.data[i];
-
-// x=[i][9] , delta=[i][10] , iv=[i][11] /call
-// x=[i][26] , delta=[i][25] , iv=[i][24] /put
  
 }
  })
