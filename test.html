@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+
+
+<script>
+
+const apiUrl = 'https://cdn.tsetmc.com/api/Instrument/GetInstrumentOptionMarketWatch/0';
+//
+const apiUrl2 = 'https://finroad.ir/panel/makejson.php';
+//
+const apiUrl3 = 'https://core.tadbirrlc.com/api/v1/option/all';
+//
+
+
+const outputElement = document.getElementById('demo');
+
+
+
+/////////////////////////
+/*
+try{
+
+  const response = fetch(apiUrl3);
+
+  if (response.ok) {
+    console.log('Promise resolved and HTTP status is successful');
+    // ...do something with the response
+  } else {
+    // Custom message for failed HTTP codes
+    if (response.status === 404) throw new Error('404, Not found');
+    if (response.status === 500) throw new Error('500, internal server error');
+    // For any other server error
+    throw new Error(response.status);
+  }
+  }
+ catch (error) {
+  console.error('Fetch', error);
+  // Output e.g.: "Fetch Error: 404, Not found"
+}
+*/
+
+/*
+fetch(apiUrl3)
+  .then(function(response) {
+    if(!response.ok) {
+      throw new Error("not ok");
+    }
+    return response.json()
+  })
+  .then(function(result) {
+    if(result.stat === "fail") {
+      throw new Error(result.message);
+    }
+
+outputElement.innerHTML = 'true';
+    // Everything should be ok, process the result here 
+
+  })
+  .catch(function(err) {
+    alert(err);
+  });
+
+*/
+
+/*
+fetch(apiUrl, { 
+  method: 'GET'
+})
+.then(function(response) { return response.json(); })
+.then(function(json) {
+  // use the json
+  outputElement.innerHTML = 'true';
+  
+});
+*/
+
+
+
+fetch(apiUrl3)
+
+
+  .then(response => {
+
+    if (!response.ok) {
+
+      throw new Error('Network response was not ok');
+	  
+    }
+
+
+    return response.json();
+
+  })
+
+  .then(data => {
+  
+  
+
+
+//forty = data.Data.Data[0].ContractRequiredMargin;
+
+ outputElement.innerHTML = 'true';
+
+ })
+  .catch(error => {
+
+    console.error('Error:', error);
+	
+	outputElement.innerHTML = 'false';
+
+  });
+
+
+
+
+////////////////////////
+
+
+</script>
+
+</body>
+</html>
