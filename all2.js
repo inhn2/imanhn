@@ -1,0 +1,1 @@
+var o =`<script src="https://core.tadbirrlc.com/api/v1/option/all" type="application/json"></script>`;
